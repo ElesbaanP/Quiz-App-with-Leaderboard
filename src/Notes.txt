@@ -1,0 +1,61 @@
+quiz-app-with-leaderboard/ Reference
+└── src/
+    ├── api/                  
+    │   └── firebase.js            # Firebase config & initialization
+    │
+    ├── assets/                    
+    │   └── logo.png               
+    │
+    ├── components/                
+    │   └── Button.jsx             # Reusable button
+    │   └── Timer.jsx              # Timer component
+    │   └── InputField.jsx         # Reusable input field
+    │
+    ├── features/                  
+    │   ├── quiz/                  
+    │   │   ├── components/        
+    │   │   │   └── QuestionCard.jsx  # Displays question + options
+    │   │   ├── pages/             
+    │   │   │   └── QuizPage.jsx      # Quiz logic page
+    │   │   └── hooks/             
+    │   │       └── useQuizLogic.js   # Handles randomization, scoring
+    │   │
+    │   ├── leaderboard/           
+    │   │   ├── components/        
+    │   │   │   └── LeaderboardTable.jsx
+    │   │   ├── pages/             
+    │   │   │   └── LeaderboardPage.jsx
+    │   │   └── services/          
+    │   │       └── leaderboardService.js # Firebase read/write
+    │   │
+    │   ├── admin/                 
+    │   │   ├── components/        
+    │   │   │   └── QuestionForm.jsx    # Form to add questions
+    │   │   ├── pages/             
+    │   │   │   └── AdminPage.jsx      
+    │   │   └── services/          
+    │   │       └── questionService.js # Firebase add questions
+    │
+    ├── hooks/                     
+    │   └── useLocalStorage.js      # Persistent data
+    │
+    ├── layouts/                   
+    │   └── MainLayout.jsx          # Navbar, container
+    │
+    ├── pages/                     
+    │   └── HomePage.jsx            # Landing screen
+    │
+    ├── routes/                    
+    │   └── AppRouter.jsx           # React Router setup
+    │
+    ├── store/                     
+    │   └── quizSlice.js            # (Optional) Redux/Zustand for state
+    │
+    ├── styles/                    
+    │   └── globals.css             # Tailwind / SCSS
+    │
+    ├── utils/                     
+    │   └── shuffleArray.js         # Randomize questions
+    │
+    ├── App.jsx                     
+    └── main.jsx                    
